@@ -1,7 +1,8 @@
 <h3>Input básicos</h3>
 <div>
 <mat-form-field>
-  <input matInput type="text" placeholder="Nombre" [value]="usuario.nombre">
+  <!--definicion de un event binding (keyup)="onKeyUp($event);-->
+  <input matInput type="text" placeholder="Nombre" [value]="usuario.nombre" (keyup)="onKeyUp($event);">
 </mat-form-field>
 
 </div>

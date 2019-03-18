@@ -18,5 +18,7 @@ export class MaterialInputComponent implements OnInit {
       this.usuario.nombre='david';
     }),6000;
   }
-
+  onKeyUp($event){
+    console.log('',$event);
+  }
 }
