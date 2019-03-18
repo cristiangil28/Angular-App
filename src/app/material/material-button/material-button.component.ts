@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./material-button.component.css']
 })
 export class MaterialButtonComponent implements OnInit {
+  formulario={
+    valido:true
+  };
 
   constructor() { }
 
   ngOnInit() {
+    setTimeout(()=>{
+      this.formulario.valido=false;
+    },3000);
   }
 
 }

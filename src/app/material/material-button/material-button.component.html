@@ -5,7 +5,9 @@
 </div>
 <h3>Botones con elevación</h3>
 <div>
-<button mat-raised-button>Básico</button>
+  <!--Property binding, la variable disabled se le esta pasando una propiedad de angular definida en un componente
+  que en este caso en material-button.component-->
+<button mat-raised-button [disabled]="!formulario.valido">Básico</button>
 
 </div>
 <h3>Botones con Icones</h3>
