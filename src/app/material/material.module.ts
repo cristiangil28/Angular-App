@@ -6,8 +6,9 @@ from '@angular/material';
 import { MaterialButtonComponent } from './material-button/material-button.component';
 import { MaterialInputComponent } from './material-input/material-input.component';
 import { MaterialListComponent } from './material-list/material-list.component';
+import { ItemEstudianteComponent } from './material-list/item-estudiante/item-estudiante.component';
 @NgModule({
-  declarations: [MaterialDemoComponent, MaterialButtonComponent, MaterialInputComponent, MaterialListComponent],
+  declarations: [MaterialDemoComponent, MaterialButtonComponent, MaterialInputComponent, MaterialListComponent, ItemEstudianteComponent],
   imports: [
     CommonModule,
     MatToolbarModule,
