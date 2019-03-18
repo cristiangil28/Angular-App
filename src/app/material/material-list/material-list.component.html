@@ -9,5 +9,7 @@
   
 </mat-list> -->
 <mat-list>
-  <app-item-estudiante *ngFor="let est of ListaEstudiantes" [estudiante]="est"></app-item-estudiante>
+  <app-item-estudiante *ngFor="let est of ListaEstudiantes" [estudiante]="est"
+  (onMouseClick)="onMouseClick($event);">
+</app-item-estudiante>
 </mat-list>

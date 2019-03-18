@@ -34,5 +34,8 @@ export class MaterialListComponent implements OnInit {
 
     this.ListaEstudiantes=[this.estudiante1, this.estudiante2,this.estudiante3];
   }
+  onMouseClick($event:Estudiante){
+    console.log('Click On: ',$event.nombre);
+  }
 
 }
