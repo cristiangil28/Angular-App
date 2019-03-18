@@ -10,6 +10,8 @@ export class MaterialListComponent implements OnInit {
   estudiante1:Estudiante;
   estudiante2:Estudiante;
   estudiante3:Estudiante;
+
+  ListaEstudiantes:Estudiante[];
   constructor() { }
 
   ngOnInit() {
@@ -29,6 +31,8 @@ export class MaterialListComponent implements OnInit {
       nombre:'maria',
       ciudad:'buenos aires'
     };
+
+    this.ListaEstudiantes=[this.estudiante1, this.estudiante2,this.estudiante3];
   }
 
 }

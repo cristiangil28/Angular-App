@@ -1,19 +1,10 @@
 <mat-list>
 
-  <mat-list-item>
+  <mat-list-item *ngFor="let estudiante of ListaEstudiantes"> 
     <img mat-line mat-list-avatar src="https://lakewangaryschool.sa.edu.au/wp-content/uploads/2017/11/placeholder-profile-sq.jpg" alt="">
-    <span mat-line>{{estudiante1.nombre}}</span>
-    <span mat-line>{{estudiante1.ciudad}}</span>
+    <span mat-line>{{estudiante.nombre}}</span>
+    <span mat-line>{{estudiante.ciudad}}</span>
   </mat-list-item>
-  <mat-list-item>
-      <img mat-line mat-list-avatar src="https://lakewangaryschool.sa.edu.au/wp-content/uploads/2017/11/placeholder-profile-sq.jpg" alt="">
-      <span mat-line>{{estudiante2.nombre}}</span>
-      <span mat-line>{{estudiante2.ciudad}}</span>
-    </mat-list-item>
-    <mat-list-item>
-        <img mat-line mat-list-avatar src="https://lakewangaryschool.sa.edu.au/wp-content/uploads/2017/11/placeholder-profile-sq.jpg" alt="">
-        <span mat-line>{{estudiante3.nombre}}</span>
-        <span mat-line> {{estudiante3.ciudad}}</span>
-      </mat-list-item>
+ 
   
 </mat-list>
